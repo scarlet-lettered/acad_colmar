@@ -1,0 +1,8 @@
+Possible colors
+hsl(10.6, 25.6%, 39%)
+hsl(76.4, 6.1%, 64.9%)
+#282624
+#653a33
+10A0u0kewqM5lIh9HvJjDlToqh3
+C65A00
+#c6a900
