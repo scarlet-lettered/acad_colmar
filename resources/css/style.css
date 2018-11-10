@@ -4,6 +4,7 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
+  color: hsl(0, 2.5%, 31%);
 }
 
 body a {
@@ -22,7 +23,7 @@ body li {
 header {
   display: flex;
   height: 4rem;
-  width: 100%
+  /* width: 100%; */
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +90,7 @@ header nav li:last-child {
   justify-content: center;
   align-items: center;
   background-position: center;
+  max-width: 60%;
 }
 
 .banner .img-box img {
@@ -122,9 +124,15 @@ header nav li:last-child {
   text-align: center;
   font-size: 1.5rem;
   color: white;
+  font-weight: 500;
   background-color: hsl(0, 2.5%, 25%);
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding: .5rem 2.5rem;
+  border-radius: .75rem;
+  width: 45%;
+}
+
+.banner .slogan-box .button:hover {
+
 }
 
 /* Information */
@@ -184,7 +192,7 @@ header nav li:last-child {
 
 .information .info-card {
   width: 100%;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -194,13 +202,19 @@ header nav li:last-child {
   border-bottom: 1px solid hsl(0, 3%, 85%);
 }
 
-.information .info-card:last-child {
+.info-card:hover {
   background-color: hsl(0, 3%, 80%);
 }
 
 .information .info-card .mini-img {
+  display: flex;
   max-width: 35%;
   padding: 1rem 1rem;
+}
+
+.information .mini-img .fme {
+  display: flex;
+  max-width: 11rem;
 }
 
 .information .mini-img img {
@@ -225,10 +239,6 @@ header nav li:last-child {
 
 .information .content h5{
   padding-bottom: .75rem;
-}
-
-.information .content a {
-  color: hsl(198.4, 84.3%, 57.5%);
 }
 
 /* Courses */
@@ -303,15 +313,21 @@ header nav li:last-child {
   align-items: center;
 }
 
+.thesis h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  padding: 2rem 0;
+}
+
 .thesis .exhibits {
   display: flex;
   flex-direction: row;
   width: 100%;
   color: hsl(0, 2.5%, 31%);
-  text-align:
 }
 
-.thesis figure {
+.thesis .img-slog {
   display: flex;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
@@ -319,6 +335,110 @@ header nav li:last-child {
   padding-bottom: 2rem;
 }
 
-.thesis video {
+.thesis .img-slog .img-box {
+  display: flex;
+  /* margin: 2rem 1.5rem; */
   max-width: 48rem;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.thesis .slogan-box {
+  padding: 0 1rem 2rem 1rem;
+}
+
+.thesis .slogan-box h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3.25rem;
+  padding-bottom: 1.75rem;
+}
+
+.thesis .slogan-box p {
+  font-size: 1.15rem;
+  padding-bottom: 1.75rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+
+.thesis .slogan-box .button {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: hsl(0, 2.5%, 25%);
+  padding: .5rem 2.5rem;
+  border-radius: 0.75rem;
+  width: 25%;
+}
+
+.thesis .info-cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  padding-top: 1rem;
+  border-left: 1px solid hsl(0, 3%, 85%);
+}
+
+.thesis .info-card {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+  border-bottom: 1px solid hsl(0, 3%, 85%);
+}
+
+.thesis .info-card .mini-img {
+  width: 35%;
+  padding: 1rem 1rem;
+  display: flex;
+}
+
+.thesis .info-card .mini-img img {
+  max-width: 11rem;
+  display: flex;
+}
+
+.thesis .info-card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0 2rem 0 .5rem;
+  text-align: left;
+  line-height: 1.5rem;
+  /* padding-left: .5rem; */
+}
+
+.thesis .info-card h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: .75rem;
+}
+
+.thesis .info-card h5 {
+  padding-bottom: .75rem;
+}
+
+.info-card .button {
+  font-weight: 500;
+  background-color: hsl(198.4, 84.3%, 57.5%);
+  padding: .5rem 1.25rem;
+  border-radius: .75rem;
+  transition: all .5s 150ms;
+  color: white;
+}
+
+.info-card .button:hover {
+  color: hsl(198.4, 84.3%, 57.5%);
+  background-color: hsl(0, 2.5%, 25%);
+}
+
+.info-card .button:visited {
+  color: hsl(0, 2.5%, 25%);
 }
