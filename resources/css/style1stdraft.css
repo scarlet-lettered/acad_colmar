@@ -4,8 +4,7 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  color: hsl(0, 0%, 12%);
-  background-color: hsl(0, 0%, 12%);
+  color: hsl(0, 2.5%, 31%);
 }
 
 body a {
@@ -30,10 +29,9 @@ header {
   align-items: center;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  color: hsl(18, 87%, 85%);
-  border-bottom: 1px solid #41567c;
+  color: hsl(0, 2.5%, 31%);
+  border-bottom: 1px solid hsl(0, 2.5%, 31%);
   font-family: "Ubuntu", sans-serif;
-  background-color: hsl(18, 87%, 11%);
 }
 
 .logo {
@@ -80,9 +78,9 @@ header nav li:last-child {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: hsl(0, 0%, 12%);
+  background-color: hsl(0, 3%, 75%);
   font-family: "Rubik", sans-serif;
-  border-bottom: 1px solid #41567c;
+  border-bottom: 1px solid hsl(0, 3%, 31%);
 }
 
 .banner .img-box {
@@ -113,7 +111,6 @@ header nav li:last-child {
   font-weight: bold;
   line-height: 3.5rem;
   padding-bottom: 1.75rem;
-  color: hsl(85, 47%, 52%);
 }
 
 .banner .slogan-box h3 {
@@ -121,7 +118,6 @@ header nav li:last-child {
   font-weight: 500;
   line-height: 2.5rem;
   padding-bottom: 1.25rem;
-  color: hsl(218, 19%, 80%);
 }
 
 .banner .slogan-box .button {
@@ -129,7 +125,7 @@ header nav li:last-child {
   font-size: 1.5rem;
   color: white;
   /* font-weight: 500; */
-  background-color: #41567C;
+  background-color: hsl(0, 2.5%, 25%);
   padding: .5rem 2.5rem;
   border-radius: .75rem;
   width: 45%;
@@ -144,10 +140,8 @@ header nav li:last-child {
   display: flex;
   flex-direction: row;
   width: 100%;
-  color: hsl(18, 87%, 85%);
-  border-bottom: 1px solid hsl(18, 87%, 16%);
-  background-color: hsl(19, 100%, 11%);
-
+  color: hsl(0, 2.5%, 31%);
+  border-bottom: 1px solid hsl(0, 3%, 75%);
 }
 
 .information .img-slog {
@@ -179,7 +173,6 @@ header nav li:last-child {
   font-weight: bold;
   line-height: 3.25rem;
   padding-bottom: 1.75rem;
-  color: hsl(85, 47%, 52%);
 }
 
 .img-slog .slogan-box p {
@@ -189,16 +182,12 @@ header nav li:last-child {
   line-height: 1.75rem;
 }
 
-.slogan-box .citation {
-  font-style: italic;
-}
-
 .information .info-cards {
   display: flex;
   flex-direction: column;
   max-width: 40%;
   padding-top: 1rem;
-  border-left: 1px solid hsl(18, 87%, 16%);
+  border-left: 1px solid hsl(0, 3%, 85%);
 }
 
 .information .info-card {
@@ -210,30 +199,23 @@ header nav li:last-child {
   flex-wrap: nowrap;
   padding-left: 1rem;
   padding-right: 1.5rem;
-  border-bottom: 1px solid hsl(18, 87%, 16%);
+  border-bottom: 1px solid hsl(0, 3%, 85%);
 }
 
-.information .info-card:hover {
-  background-color: hsl(218, 86%, 8%);
-  color: hsl(218, 86%, 58%);
+.info-card:hover {
+  background-color: hsl(0, 3%, 80%);
 }
-
-.information .info-card:hover h4 {
-  color: hsl(218, 86%, 58%);
-}
-
-.information .info-card:hover .button {
-  background-color: hsl(85, 88%, 20%);
-  color: #87AE51;
-}
-
 
 .information .info-card .mini-img {
   display: flex;
   max-width: 35%;
   padding: 1rem 1rem;
 }
-a
+
+/* .information .mini-img .fme {
+  display: flex;
+  max-width: 11rem;
+} */
 
 .information .mini-img img {
   max-width: 11rem;
@@ -253,7 +235,6 @@ a
   font-size: 1.5rem;
   font-weight: 500;
   padding-bottom: .75rem;
-  color: hsl(85, 47%, 52%);
 }
 
 .information .content h5{
@@ -267,9 +248,9 @@ a
   align-items: center;
   justify-content: center;
   padding: 2rem 4.5rem;
-  background-color: hsl(19, 100%, 11%);
-  color: hsl(218, 86%, 11%);
-  border-bottom: 1px solid #41567c;
+  background-color:  hsl(0, 3%, 95%);
+  color: hsl(0, 2.5%, 31%);
+  border-bottom: 1px solid hsl(0, 3%, 85%);
 }
 
 .courses h1 {
@@ -277,7 +258,6 @@ a
   font-weight: bold;
   font-family: "Rubik", sans-serif;
   padding-bottom: 2rem;
-  color: hsl(85, 47%, 52%);
 }
 
 .courses .course-cards {
@@ -297,7 +277,6 @@ a
   padding-left: 1rem;
   margin-bottom: 2rem;
   margin-right: 2rem;
-  border-radius: .75rem;
 }
 
 .course-cards figure img {
@@ -305,40 +284,26 @@ a
 }
 
 .course-card figcaption {
-  padding: 0rem 1rem 2.5rem 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
   width: 16.5rem;
   font-family: "Ubuntu", sans-serif;
   text-align: left;
-  background-color: hsl(26, 27%, 58%);
+  background-color: white;
   height: 7rem;
 }
 
 .course-card figcaption h4 {
-  width: 100%;
-  margin-bottom: .5rem;
-  font-family: "Rubik", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.75rem;
-  padding: .75rem;
-  background-color: hsl(218, 86%, 8%);
-  color: hsl(218, 86%, 68%);
-  border-radius: .75rem;
-}
-
-.course-card figcaption h4:hover {
-  background-color: hsl(85, 88%, 20%);
-  color: #87AE51;
+  padding-bottom: .75rem;
 }
 
 .course-card figcaption h5 {
   font-size: 1rem;
   line-height: 1.25rem;
   padding-bottom: .5rem;
-  font-weight: 500;
 }
-
-
 
 /* Theses */
 .thesis {
@@ -346,8 +311,6 @@ a
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Ubuntu", sans-serif;
-  color: hsl(218, 19%, 80%);
 }
 
 .thesis h1 {
@@ -355,13 +318,13 @@ a
   font-weight: bold;
   font-family: "Rubik", sans-serif;
   padding: 2rem 0;
-  color: hsl(85, 47%, 52%);
 }
 
 .thesis .exhibits {
   display: flex;
   flex-direction: row;
   width: 100%;
+  color: hsl(0, 2.5%, 31%);
 }
 
 .thesis .img-slog {
@@ -403,7 +366,7 @@ a
   text-align: center;
   font-size: 1.5rem;
   color: white;
-  background-color: #41567C;
+  background-color: hsl(0, 2.5%, 25%);
   padding: .5rem 2.5rem;
   border-radius: 0.75rem;
   width: 25%;
@@ -414,7 +377,7 @@ a
   flex-direction: column;
   max-width: 40%;
   padding-top: 1rem;
-  border-left: 1px solid hsl(218, 19%, 21%);
+  border-left: 1px solid hsl(0, 3%, 85%);
 }
 
 .thesis .info-card {
@@ -426,7 +389,7 @@ a
   flex-wrap: nowrap;
   padding-left: 1rem;
   padding-right: 1.5rem;
-  border-bottom: 1px solid hsl(218, 19%, 21%);
+  border-bottom: 1px solid hsl(0, 3%, 85%);
 }
 
 .thesis .info-card .mini-img {
@@ -456,7 +419,6 @@ a
   font-size: 1.5rem;
   font-weight: 500;
   padding-bottom: .75rem;
-  color: hsl(85, 47%, 52%);
 }
 
 .thesis .info-card h5 {
@@ -465,7 +427,7 @@ a
 
 .info-card .button {
   font-weight: 500;
-  background-color: #41567C;
+  background-color: hsl(198.4, 84.3%, 57.5%);
   padding: .5rem 1.25rem;
   border-radius: .75rem;
   transition: all .5s 150ms;
@@ -474,24 +436,12 @@ a
 
 .info-card .button:hover {
   color: hsl(198.4, 84.3%, 57.5%);
-  background-color: hsl(0, 2.5%, 25%)
+  background-color: hsl(0, 2.5%, 25%);
 }
 
-.thesis .info-card:hover  {
-  background-color: hsl(18, 87%, 11%);
-  color: hsl(18, 87%, 85%);
-  }
-
-.thesis .info-card:hover h4 {
-  color: hsl(18, 87%, 85%);
+.info-card .button:visited {
+  color: hsl(0, 2.5%, 25%);
 }
-
-.thesis .info-card:hover .button {
-  background-color: hsl(85, 88%, 20%);
-  color: #87AE51;
-}
-
-
 
 /* Footer */
 footer {
@@ -499,17 +449,11 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  align-self: center;
-  width: 80%;
   height: 2rem;
   font-family: "Rubik", sans-serif;
   font-size: 0.85rem;
   padding: 1rem 1.5rem;
-  margin-left: 10%;
-  margin-right: 10%;
-  border-top: 1px solid hsl(218, 19%, 21%);
-  background-color: hsl(18, 87%, 11%);
-  color: hsl(18, 87%, 85%);
+  border-top: 1px solid hsl(0, 2.5%, 85%);
 }
 
 footer nav ul {
