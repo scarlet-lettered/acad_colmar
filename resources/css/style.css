@@ -31,7 +31,7 @@ header {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   color: hsl(18, 87%, 85%);
-  border-bottom: 1px solid #41567c;
+  border-bottom: 1px solid hsl(218, 19%, 21%);
   font-family: "Ubuntu", sans-serif;
   background-color: hsl(18, 87%, 11%);
 }
@@ -82,7 +82,7 @@ header nav li:last-child {
   align-items: center;
   background-color: hsl(0, 0%, 12%);
   font-family: "Rubik", sans-serif;
-  border-bottom: 1px solid #41567c;
+  border-bottom: 1px solid hsl(218, 19%, 21%);
 }
 
 .banner .img-box {
@@ -269,7 +269,7 @@ a
   padding: 2rem 4.5rem;
   background-color: hsl(19, 100%, 11%);
   color: hsl(218, 86%, 11%);
-  border-bottom: 1px solid #41567c;
+  border-bottom: 1px solid hsl(218, 19%, 21%);
 }
 
 .courses h1 {

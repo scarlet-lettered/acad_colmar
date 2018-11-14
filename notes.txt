@@ -1,8 +1,31 @@
 Possible colors
-hsl(10.6, 25.6%, 39%)
+hsl(10.6, 25.6%, 39%) hsl(10.6, 25.6%, 39%)
 hsl(76.4, 6.1%, 64.9%)
-#282624
-#653a33
+hsl(74, 5%, 14%)
+hsl(23, 85%, 22%)
 10A0u0kewqM5lIh9HvJjDlToqh3
-C65A00
+hsl(68, 81%, 38%)C65A00
 #c6a900
+
+hsl(76.4, 6.1%, 64.9%)
+
+#6c4138
+hsl(10, 31%, 32%)
+
+#96968a
+#93968A
+hsl(75, 5%, 56%)
+
+
+
+
+<div class="img-slog">
+  <div class="img-box">
+    <img src="./resources/images/information-main.jpg" alt="Smiling man in a white sweater reads happily outdoors">
+  </div>
+  <div class="slogan-box">
+    <h1>It doesn't hurt to keep practicing</h1>
+    <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+    <span class="citation">Emmanuel, Sr. Strategist at Hiring.com</span>
+  </div>
+</div>
