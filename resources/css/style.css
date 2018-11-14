@@ -59,19 +59,72 @@ header {
   font-weight: 300;
 }
 
-header nav ul {
+.desktop ul {
   display: inline-flex;
   align-items: center;
   }
 
-header nav li {
+.desktop li {
   padding-right: 1rem;
   font-size: 1.25rem;
 }
 
-header nav li:last-child {
+.desktop li:last-child {
   padding-right: 0;
 }
+
+.desktop li a {
+  color:  hsl(18, 87%, 85%);
+}
+
+.desktop li a:hover {
+  font-weight: bold;
+}
+
+  /* Desktop */
+  @media only screen and (min-width:671px){
+    .mobile {
+      display: none;
+    }
+  }
+
+  /* Header Tablet */
+  @media only screen and (max-width: 900px) {
+    header .desktop .logo {
+      font-size: 1rem;
+      padding-top: .25rem;
+    }
+
+    header nav li {
+      font-size: .9rem;
+      padding-right: .75rem;
+    }
+  }
+
+  /* Header Phone */
+  @media only screen and (max-width: 670px) {
+    header {
+      justify-content: center;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      width: 100%;
+      list-style: none;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+
 
 /* Banner */
 .banner {
@@ -136,6 +189,27 @@ header nav li:last-child {
 }
 
 .banner .slogan-box .button:hover {
+  background-color: hsl(85, 47%, 52%);
+}
+
+/* Banner Tablet */
+@media only screen and (max-width: 900px) {
+  .banner .slogan-box h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    padding-bottom: .90rem;
+  }
+
+  .banner .slogan-box h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding-bottom: .9rem;
+  }
+
+  .banner .slogan-box .button {
+    font-size: 1.25rem;
+    padding: .5rem 1.5rem;
+  }
 
 }
 
@@ -147,7 +221,6 @@ header nav li:last-child {
   color: hsl(18, 87%, 85%);
   border-bottom: 1px solid hsl(18, 87%, 16%);
   background-color: hsl(19, 100%, 11%);
-
 }
 
 .information .img-slog {
@@ -227,7 +300,6 @@ header nav li:last-child {
   color: #87AE51;
 }
 
-
 .information .info-card .mini-img {
   display: flex;
   max-width: 35%;
@@ -256,9 +328,51 @@ a
   color: hsl(85, 47%, 52%);
 }
 
-.information .content h5{
+.information .content h5 {
   padding-bottom: .75rem;
 }
+
+/* Information Tablet */
+@media only screen and (max-width:900px) {
+  .img-slog .slogan-box h1 {
+    font-size: 1.85rem;
+    line-height: 2.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .img-slog .slogan-box p {
+    font-size: .85rem;
+    line-height: 1rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .img-slog .slogan-box .citation {
+    font-size: .75rem;
+  }
+
+  .info-card {
+    padding-bottom: .9rem;
+  }
+
+  .info-card .content h4 {
+    font-size: .95rem;
+    padding-bottom: .5rem;
+  }
+
+  .info-card .content h5 {
+    font-size: .85rem;
+    padding-bottom: .5rem;
+    line-height: .9rem;
+  }
+
+  .info-card .button {
+    padding: .25rem .8rem;
+    font-size: .85rem;
+    line-height: .9rem;
+  }
+
+}
+
 
 /* Courses */
 .courses {
@@ -409,6 +523,10 @@ a
   width: 25%;
 }
 
+.thesis .slogan-box .button:hover {
+  background-color: hsl(85, 47%, 52%);
+}
+
 .thesis .info-cards {
   display: flex;
   flex-direction: column;
@@ -491,7 +609,25 @@ a
   color: #87AE51;
 }
 
+/* Thesis Tablet */
+@media only screen and (max-width: 900px) {
+  .thesis .slogan-box h1 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  }
 
+  .thesis .slogan-box p {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .thesis .slogan-box .button {
+    font-size:.95rem;
+    padding: .35rem 1.5rem;
+  }
+}
 
 /* Footer */
 footer {
@@ -519,4 +655,12 @@ footer nav ul {
 
 footer nav li:first-child {
   padding-right: 1rem;
+}
+
+footer li a {
+  color: hsl(18, 87%, 85%);
+}
+
+footer li a:hover {
+  font-weight: bold;
 }
