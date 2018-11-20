@@ -94,7 +94,6 @@ header {
       font-size: 1rem;
       padding-top: .25rem;
     }
-
     header nav li {
       font-size: .9rem;
       padding-right: .75rem;
@@ -102,19 +101,17 @@ header {
   }
 
   /* Header Phone */
-  @media only screen and (max-width: 670px) {
+  @media only screen and (max-width: 690px) {
     header {
       justify-content: center;
+      height: 3rem;
     }
-
     .logo {
       display: none;
     }
-
     .desktop {
       display: none;
     }
-
     .mobile {
       width: 100%;
       list-style: none;
@@ -122,7 +119,6 @@ header {
       justify-content: space-between;
       align-items: center;
     }
-
   }
 
 
@@ -192,26 +188,65 @@ header {
   background-color: hsl(85, 47%, 52%);
 }
 
-/* Banner Tablet */
-@media only screen and (max-width: 900px) {
-  .banner .slogan-box h1 {
-    font-size: 2rem;
-    line-height: 2.25rem;
-    padding-bottom: .90rem;
+  /* Banner Tablet */
+  @media only screen and (max-width: 900px) {
+    .banner .slogan-box h1 {
+      font-size: 2rem;
+      line-height: 2.25rem;
+      padding-bottom: .90rem;
+    }
+    .banner .slogan-box h3 {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      padding-bottom: .9rem;
+    }
+    .banner .slogan-box .button {
+      font-size: 1.25rem;
+      padding: .5rem 1.5rem;
+    }
   }
 
-  .banner .slogan-box h3 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    padding-bottom: .9rem;
+  /* Banner Phone */
+  @media only screen and (max-width: 690px) {
+    .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 0 0;
+      margin: 0 0;
+      align-items: center;
+    }
+    .banner .img-box {
+      min-width: 100%;
+      margin: 0 0;
+      background-position: right top;
+      display: flex;
+      border: none;
+    }
+    .banner .img-box img {
+      min-width: 100%;
+      width: auto;
+      height: auto;
+      }
+    .banner .slogan-box {
+      padding: 2rem 1rem;
+      align-self: flex-start;
+      width: 95%;
+    }
+    .banner .slogan-box h1 {
+      font-size: 1.5rem;
+      line-height: normal;
+    }
+    .banner .slogan-box h3 {
+      font-size: 1rem;
+      line-height: normal;
+    }
+    .banner .slogan-box .button {
+      font-size: 1rem;
+      font-weight: bold;
+      width: 80%;
+    }
   }
-
-  .banner .slogan-box .button {
-    font-size: 1.25rem;
-    padding: .5rem 1.5rem;
-  }
-
-}
 
 /* Information */
 .information {
@@ -305,9 +340,9 @@ header {
   max-width: 35%;
   padding: 1rem 1rem;
 }
-a
 
-.information .mini-img img {
+
+.information .mini-img .desktop img {
   max-width: 11rem;
 }
 
@@ -332,46 +367,103 @@ a
   padding-bottom: .75rem;
 }
 
-/* Information Tablet */
-@media only screen and (max-width:900px) {
-  .img-slog .slogan-box h1 {
-    font-size: 1.85rem;
-    line-height: 2.25rem;
-    padding-bottom: 1.25rem;
+  /* Information Desktop */
+  @media only screen and (min-width: 691px) {
+    .mini-img .mobile img {
+      display: none;
+    }
+  }
+  /* Information Tablet */
+  @media only screen and (max-width:900px) {
+    .img-slog .slogan-box h1 {
+      font-size: 1.85rem;
+      line-height: 2.25rem;
+      padding-bottom: 1.25rem;
+    }
+    .img-slog .slogan-box p {
+      font-size: .85rem;
+      line-height: 1rem;
+      padding-bottom: 1.25rem;
+    }
+    .img-slog .slogan-box .citation {
+      font-size: .75rem;
+    }
+    .info-card {
+      padding-bottom: .9rem;
+    }
+    .info-card .content h4 {
+      font-size: .95rem;
+      padding-bottom: .5rem;
+    }
+    .info-card .content h5 {
+      font-size: .85rem;
+      padding-bottom: .5rem;
+      line-height: .9rem;
+    }
+    .info-card .button {
+      padding: .25rem .8rem;
+      font-size: .85rem;
+      line-height: .9rem;
+    }
   }
 
-  .img-slog .slogan-box p {
-    font-size: .85rem;
-    line-height: 1rem;
-    padding-bottom: 1.25rem;
-  }
+  /* Information Phone */
+  @media only screen and (max-width: 690px) {
+    .information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
 
-  .img-slog .slogan-box .citation {
-    font-size: .75rem;
-  }
+    .information .img-slog {
+      display: none;
+    }
 
-  .info-card {
-    padding-bottom: .9rem;
+    .mini-img .desktop img {
+      display: none;
+    }
+    .information .info-cards {
+      display: flex;
+      max-width: 100%;
+      padding: 0 0;
+      margin: 0 0;
+      justify-content: center;
+      align-items: flex-start;
+      border-left: none;
+    }
+    .information .info-card {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      /* padding: 1rem 1rem; */
+      margin: 0 0;
+      /* justify-content: center;
+      align-items: center; */
+    }
+    .information .mini-img {
+      min-width: 90%;
+      /* max-width: 660px; */
+      width: auto;
+      height: auto;
+      display: flex;
+      background-position: center;
+    }
+    .information .info-card .content  {
+      padding: 1rem .5rem;
+      text-align: left;
+    }
+    .information .info-card h4 {
+      font-size: 1.15rem;
+    }
+    .information .info-card h5 {
+      font-size: 1rem;
+    }
   }
-
-  .info-card .content h4 {
-    font-size: .95rem;
-    padding-bottom: .5rem;
-  }
-
-  .info-card .content h5 {
-    font-size: .85rem;
-    padding-bottom: .5rem;
-    line-height: .9rem;
-  }
-
-  .info-card .button {
-    padding: .25rem .8rem;
-    font-size: .85rem;
-    line-height: .9rem;
-  }
-
-}
 
 
 /* Courses */
@@ -451,7 +543,64 @@ a
   padding-bottom: .5rem;
   font-weight: 500;
 }
+  /* Courses Desktop */
+  @media only screen and (min-width: 691px) {
+      .mobile-courses {
+        display: none;
+      }
+  }
 
+  /* Courses Phone */
+  @media only screen and (max-width: 690px) {
+    .courses .course-cards {
+      display: none;
+    }
+
+    .courses {
+      padding: 1rem 0.5rem;
+    }
+    .courses h1 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .mobile-courses nav {
+      display: flex;
+    }
+
+    .mobile-courses ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mobile-courses li {
+      display: flex;
+      background-color: #41567C;
+      padding: .5rem 3.5rem;
+      border-radius: .75rem;
+      margin: .5rem .5rem;
+      min-width: 90%;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mobile-courses li:hover {
+      background-color: hsl(85, 47%, 52%);
+    }
+
+    .mobile-courses a {
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .mobile-courses a:hover {
+      color: hsl(85, 47%, 22%);
+    }
+  }
 
 
 /* Theses */
@@ -609,25 +758,44 @@ a
   color: #87AE51;
 }
 
-/* Thesis Tablet */
-@media only screen and (max-width: 900px) {
-  .thesis .slogan-box h1 {
-    font-size: 1.75rem;
-    line-height: 2rem;
-    padding-bottom: 1rem;
+  /* Thesis Tablet */
+  @media only screen and (max-width: 900px) {
+    .thesis .slogan-box h1 {
+      font-size: 1.75rem;
+      line-height: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .thesis .slogan-box p {
+      font-size: 1rem;
+      line-height: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .thesis .slogan-box .button {
+      font-size:.95rem;
+      padding: .35rem 1.5rem;
+    }
   }
 
-  .thesis .slogan-box p {
-    font-size: 1rem;
-    line-height: 1rem;
-    padding-bottom: 1rem;
-  }
+  /* Thesis Phone */
+  @media only screen and (max-width: 690px) {
+    .thesis .info-cards {
+      display: none;
+    }
 
-  .thesis .slogan-box .button {
-    font-size:.95rem;
-    padding: .35rem 1.5rem;
+    .thesis h1 {
+      font-size: 2rem;
+    }
+
+    .thesis .img-slog {
+      min-width: 100%;
+    }
+
+    .thesis .desktop span {
+      display: none;
+    }
   }
-}
 
 /* Footer */
 footer {
@@ -664,3 +832,15 @@ footer li a {
 footer li a:hover {
   font-weight: bold;
 }
+
+  /* Footer Phone */
+  @media only screen and (max-width:690px) {
+    footer {
+      width: 100%;
+      margin: 0 0;
+    }
+
+    footer nav {
+      display: none;
+    }
+  }

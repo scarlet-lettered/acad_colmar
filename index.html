@@ -6,9 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700," rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-    <link rel="icon" href="./resources/images/Lionfavicon.ico" type="image/x-icon">
+    <!-- <link rel="icon" href="./resources/images/Lionfavicon.ico" type="image/x-icon"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Colmar Academy</title>
   </head>
   <body>
@@ -76,8 +75,10 @@
           <div class="info-card">
             <div class="mini-img">
               <!-- <div class="fme"> -->
-              <img src="./resources/images/information-orientation.jpg" alt="Overhead shot of people walking on a trail">
+              <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Overhead shot of people walking on a trail"/>
+              <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Overhead shot of people walking on a trail">
               <!-- </div> -->
+              <!-- <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Overhead shot of people walking on a trail"/> -->
             </div>
             <div class="content">
               <h4>Orientation date</h4>
@@ -89,8 +90,10 @@
           <!-- Campus -->
           <div class="info-card">
             <div class="mini-img">
-              <img src="./resources/images/information-campus.jpg" alt="People seated in a cafe">
+              <img class="desktop" src="./resources/images/information-campus.jpg" alt="People seated in a cafe">
+              <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="People seated in a cafe">
             </div>
+            <!-- <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="People seated in a cafe"> -->
             <div class="content">
               <h4>Our campus</h4>
               <h5>Find which campus is close by you</h5>
@@ -101,8 +104,10 @@
           <!-- Sacks -->
           <div class="info-card">
             <div class="mini-img">
-              <img src="./resources/images/information-guest-lecture.jpg" alt="Neurologist Oliver Sacks wearing a black beret">
+              <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Neurologist Oliver Sacks wearing a black beret">
+              <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Neurologist Oliver Sacks wearing a black beret"/>
             </div>
+            <!-- <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Neurologist Oliver Sacks wearing a black beret"/> -->
             <div class="content">
               <h4>Our guest lecture</h4>
               <h5>Join a keynote with Oliver Sacks on music in medical treatment</h5>
@@ -185,6 +190,20 @@
       </div>
 
       <!-- End Course Cards -->
+
+      <!-- Mobile Courses Nav -->
+      <nav class="mobile-courses">
+        <ul>
+          <li><a class="button" href="#"><h4>Software</h4></a></li>
+          <li><a class="button" href="#"><h4>Computer art</h4></a></li>
+          <li><a class="button" href="#"><h4>Design</h4></a></li>
+          <li><a class="button" href="#"><h4>Data</h4></a></li>
+          <li><a class="button" href="#"><h4>Business</h4></a></li>
+          <li><a class="button" href="#"><h4>Marketing</h4></a></li>
+        </ul>
+      </nav>
+      <!-- End Mobile Courses Nav -->
+      
     </div>
     <!-- End Courses -->
 
@@ -204,7 +223,7 @@
           </div>
           <div class="slogan-box">
             <h1>Reimagine Urban</h1>
-            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat. <span class="desktop">Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</span>"</p>
             <a class="button" href="#urbanthess">Read more</a>
           </div>
         </div>
